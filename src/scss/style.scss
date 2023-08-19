@@ -1,0 +1,418 @@
+* {
+
+scroll-behavior: smooth;
+}
+
+
+.sub-heading{
+    letter-spacing: 1vw;
+    font-weight: bold;
+}
+
+.homepage {
+    background: linear-gradient(to bottom right, hsl(187, 100%, 50%), rgb(240, 144, 227));
+    background-attachment: fixed;
+    height: auto;
+    width: auto;
+}
+
+.NavBar {
+    height: 10vh;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-family: Impact;
+        font-weight: bold;
+        letter-spacing: 1vw;
+        width: 40%;
+        cursor: pointer;
+    }
+
+    .bars {
+        display: none;
+        z-index: 3;
+    }
+    .active {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: chocolate;
+        z-index: 2;
+        transition: 1s;
+    }
+
+
+    ul {
+        display: flex;
+        list-style: none;
+        height: 10vh;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+        transition: 1s;
+
+
+        li {
+            cursor: pointer;
+            font-weight: 600;
+            transition: .5s;
+            position: relative;
+
+            a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    color: gray;
+                    transition: .5s;
+                }
+            }
+
+
+        }
+    }
+
+}
+
+
+.homepage-content {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .homepage-text {
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h4 {
+            color: yellow;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        p {
+            color: gray;
+            font-style: italic;
+            line-height: 2;
+        }
+    }
+
+}
+
+.profile-image {
+
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .small-circle {
+        position: absolute;
+        height: 5vw;
+        width: 5vw;
+        background-color: rgb(0, 255, 76);
+        border-radius: 50%;
+        top: 5%;
+        left: 15%;
+    }
+
+    .medium-circle {
+        position: absolute;
+        height: 15vw;
+        width: 15vw;
+        background-color: blueviolet;
+        border-radius: 50%;
+        top: 10%;
+        left: 55%;
+        mix-blend-mode: darken;
+    }
+
+    .big-circle {
+        position: absolute;
+        height: 30vw;
+        width: 30vw;
+        background-color: rgb(255, 251, 0);
+        border-radius: 50%;
+        z-index: 1;
+        mix-blend-mode: hard-light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .profile-photo {
+            height: 100%;
+        }
+    }
+}
+
+.about{
+    .card{
+        filter: brightness(120%) contrast(110%) drop-shadow(120%);
+        border: 10px solid black;
+        box-shadow: -8px 5px  2px 2px rgba(128, 128, 128, 0.534);
+        
+
+        &:hover{
+            filter: blur(1px);
+        }
+    }
+    .about-content{
+        align-items: center;
+    }
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+.skills{
+    .skill-list{
+        gap: 2vh;
+
+        .skill-card{
+            cursor: pointer;
+            box-shadow: -8px 5px  2px 2px rgba(128, 128, 128, 0.534);
+            height: 45vh;
+        }
+    }
+}
+
+
+
+.projects{
+    .row{
+        gap: 4vh;
+    }
+    .project-card{
+        height: 50vh;
+    }
+}
+
+
+.certifications{
+    .row{
+        gap: 3vh;
+    }
+    .certificate-card{
+        height: 40vh;
+    }
+}
+
+
+.footer{
+height: 10vh;
+background-color: rgba(240, 248, 255, 0.199);
+display: flex;
+align-items: center;
+justify-content: center;
+background-blend-mode: darken;
+p{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+}
+
+
+.gototop{
+    background-color: aliceblue;
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 5vh;
+    right: 7vh;
+
+    &:hover{
+        background-color: aqua;
+        transform: scale(1.2);
+    }
+
+}
+
+// for mobile devices
+
+@media only screen and (max-width:670px) {
+    *{
+        overflow-x:hidden ;
+    }
+    .NavBar {
+        h1 {
+            width: 45%;
+            font-size: 1.5rem;
+        }
+
+        ul {
+            display: none;
+            
+        }
+
+        .bars {
+            display: block;
+        }
+    }
+
+    .homepage-content {
+
+
+        .homepage-text {
+            h1 {
+                font-size: 2rem;
+
+            }
+
+            h4 {
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+            p {
+                color: gray;
+                font-style: italic;
+            }
+        }
+
+
+        .profile-image {
+            .small-circle {
+                height: 10vw;
+                width: 10vw;
+                top: 25%;
+                left: 15%;
+            }
+
+            .medium-circle {
+                height: 20vw;
+                width: 20vw;
+                top: 28%;
+                left: 60%;
+            }
+
+            .big-circle {
+                height: 40vw;
+                width: 40vw;
+
+            }
+        }
+
+
+
+    }
+    .about{
+        .card{
+            margin: 3vh 0vw;
+        }
+    }
+}
+
+
+// for medium screens
+
+
+@media only screen and (min-width:670px) and (max-width:1500px) {
+    .NavBar {
+        h1 {
+            width: 30%;
+        }
+
+        ul {
+            li {
+                font-size: .7rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .about{
+        .about-text{
+            padding: 3vw;
+        }
+    }
+}
+
+// for big screens
+
+@media only screen and (min-width:1500px) and (max-width:3000px) {
+    .NavBar {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    .homepage-content {
+
+
+        .homepage-text {
+            h1 {
+                font-size: 4rem;
+                letter-spacing: .1vw;
+
+            }
+
+            h4 {
+                font-size: 3rem;
+                font-weight: 400;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+        }
+
+
+        .profile-image {
+            .small-circle {
+                height: 5vw;
+                width: 5vw;
+                top: 5%;
+                left: 5%;
+                background-color: aliceblue;
+            }
+
+            .medium-circle {
+                height: 10vw;
+                width: 10vw;
+                top: 10%;
+                left: 65%;
+            }
+
+            .big-circle {
+                top: 10%;
+                height: 25vw;
+                width: 25vw;
+
+            }
+        }
+    }
+    .about{
+        .about-text{
+            padding: 6vw;
+            h2{
+                font-size: 3.5rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+    }
+}

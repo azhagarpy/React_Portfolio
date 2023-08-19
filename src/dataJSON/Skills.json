@@ -1,0 +1,15 @@
+[
+    {"Name":"HTML","Img":"images/skills/html.png"},
+    {"Name":"CSS","Img":"images/skills/css.png"},
+    {"Name":"JavaScript","Img":"images/skills/js.png"},
+    {"Name":"SASS","Img":"images/skills/sass.png"},
+    {"Name":"BootStrap","Img":"images/skills/bootstrap.png"},
+    {"Name":"React JS","Img":"images/skills/react.png"},
+    {"Name":"Redux","Img":"images/skills/redux.png"},
+    {"Name":"Python","Img":"images/skills/python.png"},
+    {"Name":"Django","Img":"images/skills/django.png"},
+    {"Name":"Django REST FrameWork","Img":"images/skills/drf.png"},
+    {"Name":"MySQL","Img":"images/skills/mysql.png"},
+    {"Name":"GIT","Img":"images/skills/git.png"},
+    {"Name":"GITHUB","Img":"images/skills/github.png"}
+]

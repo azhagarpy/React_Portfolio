@@ -1,0 +1,40 @@
+[
+    {
+        "Name": "Google Crash Course on Python",
+        "In": "Coursera",
+        "Date": "17-june-2023",
+        "Img":"images/certificates/python.png"
+    },
+    {
+        "Name": "Build a Website using React",
+        "In": "Coursera",
+        "Date": "27-May-2023",
+        "Img":"images/certificates/reactProject.png"
+
+    },
+    {
+        "Name": "Learning ReactJS",
+        "In": "Coursera",
+        "Date": "26-May-2023",
+        "Img":"images/certificates/react.png"
+    },
+    {
+        "Name": "Django for Python Developers",
+        "In": "Infosys | Springboard",
+        "Date": "5-March-2023",
+        "Img":"images/certificates/django.png"
+    },
+    {
+        "Name": "JavaScript for Beginners",
+        "In": "SkillUp by Simplilearn",
+        "Date": "22-jan-2023",
+        "Img":"images/certificates/js.png"
+    },
+
+    {
+        "Name": "Python",
+        "In": "GUVI",
+        "Date": "9-October-2022",
+        "Img":"images/certificates/guvi.png"
+    }
+]

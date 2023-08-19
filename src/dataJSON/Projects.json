@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "CNG Stations API(India)",
+        "Img": "images/projects/cng.png",
+        "github":"https://github.com/azhagarpy/cng",
+        "UsedTools":"Django, Django REST FrameWork",
+        "Desc":"A open source django rest api for finding nearest cng stations in india"
+
+    },
+    {
+        "Name": "RentCart Full Stack E-Commerce Application",
+        "Img": "images/projects/rentcart.png",
+        "github":"https://github.com/azhagarpy/rentcart",
+        "UsedTools":"React JS, Redux, Django, Django REST FrameWork",
+        "Desc":"A Dynamic E-Commerce Application using React JS, Redux, Django, Django REST FrameWork and JWT Authentication"
+
+    },
+    {
+        "Name": "Django REST FrameWork CRUD API",
+        "Img": "images/projects/drfAPI.jpg",
+        "github":"https://github.com/azhagarpy/drf",
+        "UsedTools":"Django, Django REST FrameWork",
+        "Desc":"A django rest api with read, write, update, delete"
+
+    }
+]
