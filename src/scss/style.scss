@@ -201,8 +201,7 @@ scroll-behavior: smooth;
         gap: 4vh;
     }
     .project-card{
-        height: 100%;
-        padding:4vh 1vh;
+        height: 50vh;
     }
 }
 
@@ -293,6 +292,10 @@ p{
             }
         }
 
+
+            .project-card{
+        height: 60vh;
+    }
 
         .profile-image {
             .small-circle {
