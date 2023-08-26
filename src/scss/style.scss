@@ -1,10 +1,10 @@
 * {
 
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 
-.sub-heading{
+.sub-heading {
     letter-spacing: 1vw;
     font-weight: bold;
 }
@@ -35,6 +35,7 @@ scroll-behavior: smooth;
         display: none;
         z-index: 3;
     }
+
     .active {
         display: flex;
         flex-direction: column;
@@ -159,20 +160,22 @@ scroll-behavior: smooth;
     }
 }
 
-.about{
-    .card{
+.about {
+    .card {
         filter: brightness(120%) contrast(110%) drop-shadow(120%);
         border: 10px solid black;
-        box-shadow: -8px 5px  2px 2px rgba(128, 128, 128, 0.534);
-        
+        box-shadow: -8px 5px 2px 2px rgba(128, 128, 128, 0.534);
 
-        &:hover{
+
+        &:hover {
             filter: blur(1px);
         }
     }
-    .about-content{
+
+    .about-content {
         align-items: center;
     }
+
     .about-text {
         display: flex;
         flex-direction: column;
@@ -182,13 +185,13 @@ scroll-behavior: smooth;
 }
 
 
-.skills{
-    .skill-list{
+.skills {
+    .skill-list {
         gap: 2vh;
 
-        .skill-card{
+        .skill-card {
             cursor: pointer;
-            box-shadow: -8px 5px  2px 2px rgba(128, 128, 128, 0.534);
+            box-shadow: -8px 5px 2px 2px rgba(128, 128, 128, 0.534);
             height: 45vh;
         }
     }
@@ -196,42 +199,47 @@ scroll-behavior: smooth;
 
 
 
-.projects{
-    .row{
+.projects {
+    .row {
         gap: 4vh;
     }
-    .project-card{
-        height: 50vh;
+
+    .project-card {
+        height: auto;
+        padding: 5px 5px;
+        box-shadow: 8px 5px 12px 2px rgba(128, 128, 128, 0.534);
     }
 }
 
 
-.certifications{
-    .row{
+.certifications {
+    .row {
         gap: 3vh;
     }
-    .certificate-card{
-        height: 40vh;
+
+    .certificate-card {
+        height: auto;
     }
 }
 
 
-.footer{
-height: 10vh;
-background-color: rgba(240, 248, 255, 0.199);
-display: flex;
-align-items: center;
-justify-content: center;
-background-blend-mode: darken;
-p{
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1rem;
-}
+.footer {
+    height: 10vh;
+    background-color: rgba(240, 248, 255, 0.199);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: darken;
+
+    p {
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1rem;
+    }
 }
 
 
-.gototop{
+.gototop {
     background-color: aliceblue;
     height: 7vh;
     width: 7vh;
@@ -244,19 +252,52 @@ p{
     bottom: 5vh;
     right: 7vh;
 
-    &:hover{
+    &:hover {
         background-color: aqua;
         transform: scale(1.2);
     }
 
 }
 
+.social-links {
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:nth-child(1) {
+            &:hover {
+                color: rgb(255, 255, 255);
+            }
+        }
+
+        &:nth-child(2) {
+            &:hover {
+                color: rgb(0, 38, 255);
+            }
+        }
+
+        &:nth-child(3) {
+            &:hover {
+                color: rgb(197, 47, 47);
+            }
+        }
+
+        &:nth-child(4) {
+            &:hover {
+                color: rgb(0, 255, 42);
+            }
+        }
+
+    }
+}
+
 // for mobile devices
 
 @media only screen and (max-width:670px) {
-    *{
-        overflow-x:hidden ;
+    * {
+        overflow-x: hidden;
     }
+
     .NavBar {
         h1 {
             width: 45%;
@@ -265,7 +306,7 @@ p{
 
         ul {
             display: none;
-            
+
         }
 
         .bars {
@@ -275,6 +316,7 @@ p{
 
     .homepage-content {
 
+        height: auto;
 
         .homepage-text {
             h1 {
@@ -319,12 +361,21 @@ p{
 
 
     }
-    .about{
-        .card{
+
+    .about {
+        .card {
             margin: 3vh 0vw;
         }
     }
+
+    .gototop {
+        background-color: aliceblue;
+        right: 2vh;
+        bottom: 2vh;
+        background-color: black;
+    }
 }
+
 
 
 // for medium screens
@@ -343,8 +394,9 @@ p{
             }
         }
     }
-    .about{
-        .about-text{
+
+    .about {
+        .about-text {
             padding: 3vw;
         }
     }
@@ -404,13 +456,16 @@ p{
             }
         }
     }
-    .about{
-        .about-text{
+
+    .about {
+        .about-text {
             padding: 6vw;
-            h2{
+
+            h2 {
                 font-size: 3.5rem;
             }
-            p{
+
+            p {
                 font-size: 2rem;
             }
         }

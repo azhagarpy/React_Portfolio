@@ -11,7 +11,7 @@ const Projects = () => {
         {projects.map((e, index) => {
           return (
             <Fade>
-              <div key={index} className='card col-xl-3 col-lg-3 col-md-5 col-sm-5 col-xs-6 justify-content-around project-card'>
+              <div key={index} className='card  col-xl-3 col-lg-3 col-md-5 col-sm-5 col-xs-6 justify-content-around project-card'>
                 <img src={e.Img} className='card-img-top border' />
                 <h4 className='text-center '>{e.Name}</h4>
                 <p>{e.Desc}</p>

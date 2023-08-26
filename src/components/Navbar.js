@@ -8,6 +8,18 @@ const Navbar = () => {
     setOpen(!open)
 
   }
+
+  const handleDownload = () => {
+    // Define the file URL
+    const fileUrl = 'resume/Azhagar M.pdf'; // Replace with your file URL
+
+    // Create a virtual anchor element to trigger the download
+    const anchor = document.createElement('a');
+    anchor.href = fileUrl;
+    anchor.download = 'Azhagar Resume.pdf'; // The default downloaded file name
+    anchor.click();
+  };
+
   return (
     <div className="NavBar" id="nav">
       <h1>
@@ -21,9 +33,9 @@ const Navbar = () => {
             </li>
           );
         })}
-        <button className="btn btn-primary d-flex">
+        <button className="btn btn-primary d-flex" onClick={handleDownload}>
           <span className="mx-1">Resume</span>
-          <FaDownload/>
+          <FaDownload className="mt-1 ms-1"/>
         </button>
       </ul>
       <div className="bars">

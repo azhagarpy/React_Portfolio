@@ -23,7 +23,6 @@ const Homepage = () => {
       <Projects />
       <hr />
       <Certifications/>
-      <Footer/>
       <GotToTop/>
     </div>
   );

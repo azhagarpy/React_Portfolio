@@ -4,7 +4,7 @@ const GotToTop = () => {
   return (
     <div className='gototop'>
         <a href='#nav'>
-        <FaArrowUp size={40}/>
+        <FaArrowUp size={20}/>
         </a>
     </div>
   )
